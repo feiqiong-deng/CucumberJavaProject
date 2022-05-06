@@ -16,23 +16,24 @@
 #""
 ## (Comments)
 #Sample Feature Definition Template
-@tag
+#@tag
 Feature: feature to test login functionality
 
-  @tag1
-  Scenario: Check login is successfully with valid credentials
+  #@tag1
+  Scenario: Check login is successful with valid credentials
     Given user is on login page
     When user enters username and password
     And clicks on login button
     Then user is navigated to the home page
-
-  @tag2
-  Scenario Outline: Title of your scenario outline
-    Given I want to write a step with <name>
-    When I check for the <value> in step
-    Then I verify the <status> in step
-
-    Examples: 
-      | name  | value | status  |
-      | name1 |     5 | success |
-      | name2 |     7 | Fail    |
+  #@tag2
+  #Scenario Outline: Check login is successful with valid credentials
+  #
+    #Given user is on login page
+    #When user enters <name> and <password>
+    #And clicks on login button
+    #Then user is navigated to the home page
+#
+    #Examples: 
+      #| name  | password | 
+      #| name1 |     p1 |
+      #| name2 |     p2 |
