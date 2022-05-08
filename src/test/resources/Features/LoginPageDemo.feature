@@ -9,5 +9,5 @@ Feature: Test login functionality
 
     Examples:
     | username | password |
-    | Raghav | 12345 |
+    | Emma | 12345 |
     | Lily | 12345 |
