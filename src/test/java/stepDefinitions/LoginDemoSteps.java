@@ -31,12 +31,12 @@ public class LoginDemoSteps {
 
 	}
 
-	@When("user enters valid username and password")
-	public void user_enters_valid_username_and_password() throws InterruptedException {
+	@When("^user enters valid (.*) and (.*)$")
+	public void user_enters_valid_username_and_password(String username, String password) throws InterruptedException {
 		System.out.println("Step: user enters valid username and password");
 
-		driver.findElement(By.id("name")).sendKeys("Raghav");
-		driver.findElement(By.id("password")).sendKeys("12345");
+		driver.findElement(By.id("name")).sendKeys(username);
+		driver.findElement(By.id("password")).sendKeys(password);
 		Thread.sleep(2000);
 
 	}
