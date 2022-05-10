@@ -27,7 +27,7 @@ public class HooksSteps {
 		System.out.println("This is in the setup order 1");
 	}
 	
-	@After(order = 0)
+	@After(order = 1)
 	public void teardown() {
 		System.out.println("This is in the teardown.");
 
@@ -35,7 +35,7 @@ public class HooksSteps {
 		driver.quit();
 	}
 	
-	@After(order = 1)
+	@After(order = 0)
 	public void testTeardownOrder() {
 		System.out.println("This is in the teardown order 1");
 	}
